@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    ui:
+      path: /ui/**
+      url: http://ui:5000

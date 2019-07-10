@@ -1,0 +1,6 @@
+info:
+  description: MSDAF Spring Cloud Config
+  url: https://gaesi.gitlab.io/msdaf/wiki
+      
+foo: bar
+baz: foo

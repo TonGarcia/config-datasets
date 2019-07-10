@@ -1,0 +1,23 @@
+---
+spring:
+  profiles: cloudpeers
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.${PREFIX:}othereureka.credentials.uri:http://${PREFIX:}othereureka.${application.domain:cfapps.io}}/eureka/
+
+---
+spring:
+  profiles: msdaf
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+---
+spring:
+  profiles: docker
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
